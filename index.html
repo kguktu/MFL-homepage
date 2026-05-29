@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MFL | 전북대학교 취업동아리</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">M</span>
+        <span>MFL</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">메인</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#activities">활동</a></li>
+        <li><a href="#promotion">홍보 게시물</a></li>
+        <li><a href="#gallery">갤러리</a></li>
+        <li><a href="#recruit">모집</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">JBNU Career Club</p>
+        <h1>
+          기업을 분석하고,<br />
+          현장을 탐방하며,<br />
+          실무 감각을 키우는 MFL
+        </h1>
+        <p class="hero-desc">
+          MFL은 전북대학교 학생들이 기업 분석, 기업 탐방, 가상기업 제작,
+          홍보 활동, 오픽 스터디 등을 통해 취업 역량과 실무 감각을 함께 키워가는 취업동아리입니다.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#recruit" class="btn primary">지원하러 가기</a>
+          <a href="#activities" class="btn secondary">활동 둘러보기</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-image">
+          <div class="image-text">
+            <strong>MFL</strong>
+            <span>Make Future Leaders</span>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>4+</strong>
+            <span>정기 활동</span>
+          </div>
+          <div>
+            <strong>2+</strong>
+            <span>개별 활동</span>
+          </div>
+          <div>
+            <strong>∞</strong>
+            <span>성장 가능성</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-title reveal">
+        <p class="eyebrow">About MFL</p>
+        <h2>전북대학교 취업동아리 MFL</h2>
+        <p>
+          MFL은 단순한 친목 동아리가 아니라, 실제 기업과 시장을 분석하고
+          현장 경험을 쌓으며 취업 준비에 필요한 실전 역량을 키우는 동아리입니다.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <span>01</span>
+          <h3>실전형 취업 준비</h3>
+          <p>
+            기업 분석, 산업 분석, 발표, 보고서 작성을 통해 취업 과정에서 필요한 논리력과 표현력을 기릅니다.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <span>02</span>
+          <h3>현장 중심 활동</h3>
+          <p>
+            기업 탐방과 인터뷰를 통해 책이나 인터넷으로는 알기 어려운 현장의 분위기와 실무 정보를 경험합니다.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <span>03</span>
+          <h3>함께 성장하는 팀 활동</h3>
+          <p>
+            팀별 프로젝트와 스터디를 통해 혼자 준비하기 어려운 취업 준비를 함께 이어갑니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="section activities">
+      <div class="section-title reveal">
+        <p class="eyebrow">Activities</p>
+        <h2>주요 활동</h2>
+        <p>
+          MFL은 정기적으로 진행되는 활동과 프로젝트별로 진행되는 개별 활동을 함께 운영합니다.
+        </p>
+      </div>
+
+      <div class="activity-category reveal">
+        <h3>정기적인 활동</h3>
+        <p>동아리 운영의 중심이 되는 핵심 활동입니다.</p>
+      </div>
+
+      <div class="activity-grid" id="regularActivities"></div>
+
+      <div class="activity-category reveal">
+        <h3>개별적인 활동</h3>
+        <p>상황과 프로젝트에 따라 진행되는 특별 활동입니다.</p>
+      </div>
+
+      <div class="activity-grid" id="specialActivities"></div>
+    </section>
+
+    <section id="promotion" class="section promotion">
+      <div class="section-title reveal">
+        <p class="eyebrow">Promotion Board</p>
+        <h2>홍보 게시물</h2>
+        <p>
+          앞으로 MFL이 물건을 받아 홍보 활동을 진행할 때, 이곳에 게시물을 추가할 수 있습니다.
+          게시물은 script.js의 promotionPosts 부분만 수정하면 자동으로 추가됩니다.
+        </p>
+      </div>
+
+      <div class="promotion-grid" id="promotionPosts"></div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="section-title reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>활동 갤러리</h2>
+        <p>
+          활동 사진은 images 폴더에 넣고 script.js에서 이미지 경로만 바꾸면 됩니다.
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="galleryList"></div>
+    </section>
+
+    <section id="recruit" class="section recruit">
+      <div class="recruit-box reveal">
+        <div>
+          <p class="eyebrow">Recruitment</p>
+          <h2>MFL 신입 부원 모집</h2>
+          <p>
+            기업 분석, 취업 준비, 발표, 보고서 작성, 기업 탐방, 홍보 프로젝트에 관심 있는
+            전북대학교 학생이라면 누구나 MFL과 함께할 수 있습니다.
+          </p>
+
+          <ul class="recruit-info">
+            <li><strong>모집 대상</strong> 전북대학교 재학생 및 휴학생</li>
+            <li><strong>활동 내용</strong> 기업 분석, 기업 탐방, 가상기업 제작, 홍보 활동, 오픽 스터디</li>
+            <li><strong>활동 방식</strong> 팀별 프로젝트 및 정기 모임</li>
+            <li><strong>지원 방법</strong> 구글폼 제출 후 간단한 면접 또는 인터뷰</li>
+          </ul>
+        </div>
+
+        <div class="recruit-card">
+          <h3>모집 상태</h3>
+          <div class="countdown" id="countdown">모집중</div>
+          <a href="https://forms.gle/" target="_blank" class="btn primary full">
+            지원서 작성하기
+          </a>
+          <p class="small-text">
+            실제 구글폼 링크로 교체해서 사용하세요.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>문의하기</h2>
+        <p>동아리 활동, 지원, 협업 및 홍보 문의는 아래 연락처로 보내주세요.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Instagram</h3>
+          <p id="instagramText">@mfl_official</p>
+          <a id="instagramLink" href="https://instagram.com" target="_blank">인스타그램 바로가기</a>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>Email</h3>
+          <p id="emailText">mfl@example.com</p>
+          <a id="emailLink" href="mailto:mfl@example.com">메일 보내기</a>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>KakaoTalk</h3>
+          <p>오픈채팅 운영 예정</p>
+          <a id="kakaoLink" href="#" target="_blank">오픈채팅 참여하기</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <h3>간단 문의 남기기</h3>
+
+        <div class="form-row">
+          <input type="text" id="name" placeholder="이름" required />
+          <input type="email" id="email" placeholder="이메일" required />
+        </div>
+
+        <textarea id="message" rows="5" placeholder="문의 내용을 입력하세요." required></textarea>
+
+        <button type="submit" class="btn primary">문의 보내기</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MFL. All rights reserved.</p>
+    <button class="top-btn" id="topBtn">TOP</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
