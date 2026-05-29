@@ -73,6 +73,8 @@ ul {
   height: 38px;
   object-fit: cover;
   border-radius: 13px;
+  display: block;
+  flex-shrink: 0;
   box-shadow: 0 12px 26px rgba(31, 58, 138, 0.18);
 }
 
@@ -204,7 +206,7 @@ ul {
 .hero-image {
   height: 420px;
   border-radius: 28px;
-  background: #ffffff url("MFL-logo.jpeg") center 38% / 58% no-repeat;
+  background: #ffffff url("MFL-logo.jpeg") center 42% / 82% auto no-repeat;
   position: relative;
   overflow: hidden;
   border: 1px solid #e5e7eb;
@@ -786,4 +788,14 @@ textarea:focus {
     gap: 18px;
     text-align: center;
   }
+}
+
+.logo img,
+.logo-icon {
+  width: 38px !important;
+  height: 38px !important;
+  object-fit: cover;
+  border-radius: 13px;
+  display: block;
+  flex-shrink: 0;
 }
